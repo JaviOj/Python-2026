@@ -1,8 +1,8 @@
 print("-----LISTAS-----")
 
-# Primera forma de declarar listas
+# Primera forma de declarar listas (lista mixta)
 lista1 = ["a", 6, True]
-# Segunda forma de declarar listas
+# Segunda forma de declarar listas (lista numerica)
 n = list([1,2,3,4,5,6])
 
 print(type(n))
