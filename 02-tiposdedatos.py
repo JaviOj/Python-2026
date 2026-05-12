@@ -43,6 +43,10 @@ print(carrera[0])
 imprimiendo la letra en la posición
 del n° ingresado"""
 
+# Aplicar metodo split
+print(carrera.split()) # separa la cadena en subcadenas
+print(institucion.split())
+
 print("Hola" * 4) # Multiplicacion de un string por entero
 # print( "Hola" / 2 ) # No se puede hacer
 
@@ -60,3 +64,24 @@ lista_mixta = ["Gato", 2, 23.2, True]           # Arreglo mixto
 print(colores[0]) # Se imprime el primer elemento de la lista colores
 print(numeros[-1]) # Se imprime el ultimo elemento de la lista números
 print(lista_mixta)
+
+print("-------BOOLEANOS-------")
+# Booleanos(Lógicos)
+luz_electrica = True
+interruptor = False
+
+print(luz_electrica)
+print(interruptor)
+
+# Metodo type que permite saber el tipo de dato de una variable
+print(f"El tipo de dato es {type(colores)}") 
+
+print("-------EVALUANDO DATOS BOOLEANOS-------")
+print(bool(1))
+print(bool(0))
+print(bool(""))
+print(bool("Texto"))
+print(bool(9000))
+
+
+
