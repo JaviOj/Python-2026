@@ -36,6 +36,8 @@ print("-------CADENAS DE TEXTO-------- \n")
 # Cadenas de texto (STRINGS)
 carrera = "Ingenieria Civil en Informática" 
 institucion = "Universidad de Los Lagos"
+descripcion = """La asignatura de programacion se imparte en el primer semestre, tiene por objetivo
+entregar la base lógica para cualquier estudiante que comience a familiarizarse con la programacion."""
 
 # Imprimir la posición del caracter
 print(carrera[0]) 
@@ -83,5 +85,8 @@ print(bool(""))
 print(bool("Texto"))
 print(bool(9000))
 
-
+# Evaluando numeros con operadores de comparacion
+print (100 > 50)
+print (10 == 10)
+print (20 < 0)
 
