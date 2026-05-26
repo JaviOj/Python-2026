@@ -1,0 +1,11 @@
+consumo = [] 
+maniana = float(input("GB consumidos durante la mañana: " ))
+mediodia = float(input("GB consumidos durante el medio dia: " ))
+tarde = float(input("GB consumidos durante la tarde: " ))
+noche = float(input("GB consumidos durante la noche: " ))
+consumo.append(maniana)
+consumo.append(mediodia)
+consumo.append(tarde)
+consumo.append(noche)
+print(f"El promedio de consumo es de {sum(consumo)/4} GB")
+print(f"El rango de operación es de {max(consumo)-min(consumo)} GB")
