@@ -5,10 +5,9 @@ tiempo_respuesta = []
 tiempo_respuesta.append(toma1)
 tiempo_respuesta.append(toma2)
 tiempo_respuesta.append(toma3)
-print(tiempo_respuesta)
 promedio = (tiempo_respuesta[0] + tiempo_respuesta[1] + tiempo_respuesta[2]) / len(tiempo_respuesta)
 min_t = min(tiempo_respuesta)
 max_t = max(tiempo_respuesta)
 brecha = max_t - min_t
-print(f"La lista de datos tiene los siguientes datos: \n promedio: {promedio}\n la brecha es de {brecha}")
+print(f"La lista de datos tiene los siguientes datos: {tiempo_respuesta}\npromedio: {promedio}\nla brecha es de {brecha}")
 
