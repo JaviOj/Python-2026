@@ -1,6 +1,7 @@
 # TUPLAS
+print(f"-----------------TUPLAS-----------------")
 # Creando tupla tipo string
-estudiantes = ("a","b", "c","d")
+estudiantes = ("d","b", "a","c")
 print(type(estudiantes))
 print(f"TUPLA: {estudiantes}")
 
@@ -25,3 +26,7 @@ print(f"TUPLA CON ULTIMO ELEMENTO ELIMINADO: {estudiantes}")
 Al ser inmutable no se pueden agregar o eliminar elementos"""
 # Vamos a consultar posición con metodo index
 print(estudiantes.index("a"))
+
+# Metodo sorted
+print(sorted(estudiantes)) # Se transformó a lista
+
