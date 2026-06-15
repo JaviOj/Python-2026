@@ -88,5 +88,38 @@ medico2 = medico.copy()
 print(medico2)
 medico2.clear()
 print(medico2) # ->{}
+# Copiar datos
+# El personaje tiene datos simples y un dato compuesto (Lista)
+personaje_original = {
+"nombre": "Espadachin",
+"vida": 100,
+"mochila": [ "Espada", "Poción"] 
+}
+# Hacemos una copia superficial usando el método.copy()
+personaje_copiado = personaje_original.copy()
+print(f"Original: {personaje_original}")
+print(f"Copia : {personaje_copiado}\n")
+print("--- MODIFICANDO UN DATO SIMPLE (Inmutable) ---")
+
+# Si le cambiamos el nombre a la copia...
+personaje_copiado ["nombre"] = "Mago Oscuro"
+personaje_copiado ["vida"] = 80
+
+# Funcion map
+n = [1, 2, 3, 4, 5]
+n_str = list(map(str,n))
+print(f"Lista de números como strings: {', '.join(n_str)}")
+
+# Funcion filter
+ramos = ["Programación", "Física", "Cálculo", "Habilidades Comunicativas"]
+long = list(filter (lambda x: len(x) > 7, ramos))
+print(long)
+
+print("--- METODOS PARA DATOS ITERABLES ---")
+# Funcion ZIP
+a = [1, 2, 3, 4]
+b = ["A", "B", "C", "D"]
+comprimir = list(zip(a,b))
+print(comprimir)
 
 
