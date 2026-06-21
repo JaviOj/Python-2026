@@ -103,7 +103,7 @@ simbolos = {
 }
 
 #c)Tablero dibujado
-def mostrar_tablero(): #creando funcion |1=def, 2=nombre_de_funcion():, 3=codigo identado(dentro de la funcion)
+def mostrar_tablero():
     columnas = "abcdefgh"
     print(f"  {columnas}  ")
     print(f"8 {simbolos [tablero['h1']]}{simbolos [tablero['h2']]}{simbolos [tablero['h3']]}{simbolos [tablero['h4']]}{simbolos [tablero['h5']]}{simbolos [tablero['h6']]}{simbolos [tablero['h7']]}{simbolos [tablero['h8']]} 8")
@@ -133,7 +133,6 @@ def procesar_movimiento(origen, destino, capturadas):
         capturadas.append(pieza_destino)
         print(f"¡Capturó la pieza {pieza_destino} en {destino}!")
 
-    # Realizar el movimiento físico en el diccionario
     tablero[destino] = pieza_origen
     tablero[origen] = "."
     return True
@@ -150,11 +149,12 @@ while True:
         
     destino = input("Ingrese la casilla de destino: ").lower()
     
-    # Llamamos a la función DENTRO del ciclo para que ocurra en cada turno
+    
     movimiento_exitoso = procesar_movimiento(origen, destino, capturadas)
     
     if movimiento_exitoso:
         print(f"Piezas capturadas hasta ahora: {capturadas}")
+        
 """
 Javiera ojeda
 Diana Dusseaux
