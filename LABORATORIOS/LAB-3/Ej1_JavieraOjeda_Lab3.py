@@ -50,8 +50,8 @@ while True:
     else:
         print("ID de región no válido. Intente nuevamente.\n")
 
-print(f"Las claves del diccionario final son: {censo_2017.keys()}")
-print(f"Los valores del diccionario final son: {censo_2017.values()}")
+print(f"Las claves del diccionario final son: {censo_2017.items()}")
+
 
 
 
