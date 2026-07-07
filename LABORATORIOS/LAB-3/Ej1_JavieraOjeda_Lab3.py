@@ -12,8 +12,8 @@ censo_2017 = {
 }
 print(f"Diccionario inicial: \n {censo_2017}\n ")
 
-densidad14 = float(round(censo_2017["14"]["habitantes"] /censo_2017["14"]["Superficie"]))
-densidad12 = float(round(censo_2017["12"]["habitantes"] /censo_2017["12"]["Superficie"]))
+densidad14 = float(round(censo_2017["14"]["habitantes"] /censo_2017["14"]["Superficie"],1))
+densidad12 = float(round(censo_2017["12"]["habitantes"] /censo_2017["12"]["Superficie"],1))
 
 censo_2017["14"]["densidad"]= densidad14 # se agrega clave densidad y valor a diccionario
 censo_2017["12"]["densidad"]= densidad12 # se agrega clave densidad y valor a diccionario
